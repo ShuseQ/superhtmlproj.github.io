@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+
+body{
+    font-family: 'Exo 2', sans-serif;
+    background: linear-gradient(0deg, #00bbf0 0%, #fdb44b 101%);
+}
+
+p {
+    color: white
+}
+
+.bg-light{
+    background-color: #00bbf0
+    !important;
+}
+
+.navbar-brand img{
+    max-width: 40px;
+}
+
+.navbar-nav .nav-link{
+    color: #005792
+}
+
+.navbar-nav .nav-link.active{
+    color: #00204a
+}
+
+.sidebar{
+    background: linear-gradient(180deg, #00bbf0 0%, #fdb44b 101%);
+}
+
+.card {
+    background: linear-gradient(180deg, #00bbf0 0%, #fdb44b 101%);
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.slide-text, .footer-text {
+    color: white;
+    margin: auto auto;
+}
+
+.card-body {
+    color: white;
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+footer {
+    background-color: #fdb44b;
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background img {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.img-text {
+    color: white;
+    z-index: 2;
+}
+
+@keyframes wobble {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+.call-anim {
+    animation: wobble 3s ease 0s infinite normal forwards;
+}
